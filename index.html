@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kryptering</title>
+  <script src="rollups/aes.js"></script>
+  <script src="rollups/hmac-sha1.js"></script>
+</head>
+<body>
+  <h3>AES kryptering</h3>
+  <input id="plaintxt" type="text">
+  <button id="encrypt" type="button">Encrypt</button>
+  <button id="decrypt" type="button">Decrypt</button>
+  <br><br>
+
+  <label>encrypted</label>
+  <div id="encrypted"></div>
+  <br>
+
+  <label>hash</label>
+  <div id="hash"></div>
+  <br>
+
+  <label>decrypted</label>
+  <div id="decrypted"></div>
+  <br>
+
+  <label>plaintext</label>
+  <div id="plaintext"></div>
+  <br>
+</body>
+<script src="krypt.js"></script>
+</html>
